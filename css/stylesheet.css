@@ -19,19 +19,41 @@ h2{
     font-family: 'montserrat';
     font-weight: bold;
     font-size: 1.3rem;
-    text-align: center;
     margin-bottom: none;
 }
 li{
     font-family: 'montserrat';    
+    font-size: 1rem;
+    line-height: 1.6rem;
     list-style-type: none;
     text-decoration: none;
+}
+h2,li{
     text-align: center;
+}
+.imgtext{
+    color: #759CFF;
+    font-size: 1.5rem;
+    padding-top: 2rem;
 }
 .link{
     display: block;
     font-family: 'montserrat';
     font-weight: bold;
-    color: #9E9E9E;
+    color: #759CFF;
     text-align: center;
 }
+.img{
+    text-align: center;
+}
+img{
+    display: inline-block;
+    filter: drop-shadow(0px 0px 15px #E7E7E7);
+    max-width: 425px;
+    padding: 3rem;
+    text-align: center;
+}
+a:hover {
+    color:#A3BCFF;
+   }
+  
