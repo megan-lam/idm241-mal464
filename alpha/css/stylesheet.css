@@ -27,6 +27,7 @@ li{
     line-height: 1.6rem;
     list-style-type: none;
     text-decoration: none;
+    padding-right: 2rem;
 }
 h2,li{
     text-align: center;
