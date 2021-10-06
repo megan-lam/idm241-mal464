@@ -54,6 +54,10 @@ img{
     padding: 3rem;
     text-align: center;
 }
+@media (max-width: 500px){
+    img{
+       max-width: 300px;
+    }}
 a:hover {
     color:#A3BCFF;
    }
