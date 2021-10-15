@@ -93,16 +93,26 @@ h2.title{
 .content{
     padding-top: 2rem;
 }
+.on, .off{
+    list-style: none;
+    font-weight: bold;
+    color: #3B6DED;
+}
+.off{
+    margin-top: 1rem;
+}
 li{
     font-family: 'montserrat';    
     font-size: 1rem;
     line-height: 1.6rem;
-    padding-right: 2rem;
-    max-width: 22rem;
+    max-width: 29rem;
 }
-.ptext{
+
+.center {
     display: flex;
     justify-content: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 /*h2,li{
     text-align: center;
@@ -134,10 +144,10 @@ img{
   #img_trans img {
     position:absolute;
     left:0;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s 1s ease-in-out;
+    -moz-transition: opacity 1s 1s ease-in-out;
+    -o-transition: opacity 1s 1s ease-in-out;
+    transition: opacity 1s 1s ease-in-out;
     animation-duration: 6s;
   }
   
@@ -186,6 +196,7 @@ img{
 }
 .card:hover{
     text-decoration: underline;
+    cursor: grab;
 }
     
 .stars{
