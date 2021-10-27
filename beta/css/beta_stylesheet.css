@@ -1,0 +1,167 @@
+@font-face{
+    font-family: 'montserrat';
+    src: url(../fonts/montserrat-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'montserrat';
+    src: url(../fonts/montserrat-bold-webfont.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'montserrat';
+    src: url(../fonts/montserrat-semibold-webfont.woff2) format('woff2');
+    font-weight:lighter;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'raleway';
+    src: url(../fonts/raleway-regular-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'raleway';
+    src: url(../fonts/raleway-bold-webfont.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+    margin:0;
+}
+.brand{
+    padding-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.the{
+    color: black;
+    font-family: 'raleway';
+    font-size: 3rem;
+    font-weight: normal;
+    text-decoration: none;
+    padding-left: .5rem;
+    top: 4rem;
+}
+.ordinary{
+    color: black;
+    font-family: 'raleway';
+    font-size: 5.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 500px){
+    .the{
+       font-size: 1.7rem;
+    }
+    .ordinary{
+        font-size: 4rem;
+    }}
+.bar{
+    background-color: #E0DED9;
+    height: 1.8rem;
+    width: -50%;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    left: 0;
+}
+.alphatext{
+    font-family: 'montserrat';
+    padding-left: 4.5rem;
+    padding-top: .2rem;
+}
+/*h1{
+    font-family: 'montserrat';
+    text-align: center;
+    padding-top: 2%;
+}*/
+h2.title{
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.title{
+    margin: 0;
+}
+.content{
+    padding-top: 2rem;
+}
+.on, .off{
+    list-style: none;
+    font-weight: bold;
+    color: #3B6DED;
+    margin-top: 1rem;
+}
+.on2, .off2{
+    list-style: none;
+    font-weight: bold;
+    color: #936af3;
+    margin-top: 1rem;
+}
+li{
+    font-family: 'montserrat';    
+    font-size: 1rem;
+    line-height: 1.6rem;
+    max-width: 29rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.imgtext{
+    color: #3B6DED;
+    font-family: 'montserrat';
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding-top: 2rem;
+}
+.img{
+    text-align: center;
+}
+img{
+    display: inline-block;
+    max-width: 425px;
+    padding: 3rem;
+    text-align: center;
+}
+/*h2,li{
+    text-align: center;
+}
+.imgtext{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding-top: 2rem;
+}
+.img{
+    text-align: center;
+}
+img{
+    display: inline-block;
+    filter: drop-shadow(0px 0px 15px #E7E7E7);
+    max-width: 425px;
+    padding: 3rem;
+    text-align: center;
+}*/
+img{
+    max-width: 280px;
+}
+
+@media (max-width: 500px){
+    img{
+       max-width: 300px;
+    }}
+
+.ordinary:hover {
+    text-decoration: underline;
+   }
+  
