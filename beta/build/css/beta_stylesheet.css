@@ -30,6 +30,7 @@
 }
 body{
     margin:0;
+    padding: 0;
 }
 .brand{
     padding-top: 3rem;
@@ -245,7 +246,7 @@ img{
     position: relative;
     float: right;
 }
-.add{
+/*.add{
     font-family: 'montserrat';
     font-weight: bold;
     font-size: .8rem;
@@ -254,9 +255,9 @@ img{
     border: 1px solid black;
     padding: 8px 8px;
     border-radius: 5px;
-    transition-duration: 0.8s;
+    transition-duration: 0.5s;
     cursor: pointer;
-}
+}*/
 .add:hover {
     background-color: black;
     color: white;
@@ -265,4 +266,159 @@ img{
 .ordinary:hover {
     text-decoration: underline;
    }
+
+
+
+   .modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.3);
+    transition: opacity .25s ease;
+  }
   
+  .modal__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .modal-state {
+    display: none;
+  }
+  
+  .modal-state:checked + .modal {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal-state:checked + .modal .modal__inner {
+    top: 0;
+  }
+  
+  .modal__inner {
+    transition: top .25s ease;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 281px;
+    margin: auto;
+    overflow: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1em 2em;
+    height: 394px;
+  }
+  
+  .modal__close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 1.1em;
+    height: 1.1em;
+    cursor: pointer;
+  }
+  
+  .modal__close:after,
+  .modal__close:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1.5em;
+    background: #ccc;
+    display: block;
+    transform: rotate(45deg);
+    left: 50%;
+    margin: -3px 0 0 -1px;
+    top: 0;
+  }
+  
+  .modal__close:hover:after,
+  .modal__close:hover:before {
+    background: #aaa;
+  }
+  
+  .modal__close:before {
+    transform: rotate(-45deg);
+  }
+  
+  @media screen and (max-width: 768px) {
+      
+    .modal__inner {
+      width: 50%;
+      height: 60%;
+      box-sizing: border-box;
+    }
+  }
+  
+  
+  /* Other
+   * =============================== */
+  
+  .btn {
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-size: .8rem;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 8px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .btn2 {
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-size: .8rem;
+    background-color: white;
+    color: #9E9E9E;
+    border: 1px solid #9E9E9E;
+    padding: 6px 20px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+  .btn2:hover{
+      background-color: #9E9E9E;
+      color: white;
+  }
+  .btn:hover,
+  .btn:focus {
+    background: black;
+    color: white;
+  }
+  
+  .btn:active {
+    background: black;
+    box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+  }
+  .modal_text{
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #9E9E9E;
+  }
+  .position_modal{
+      text-align: center;
+      padding-top: 30%;
+  }
+  .position_btn2{
+      display: block;
+      padding-top: 2.5rem;
+  }
+  .position_btn3{
+    display: block;
+    padding-top: 2rem;
+}
