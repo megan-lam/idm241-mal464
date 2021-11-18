@@ -170,13 +170,12 @@ img{
   #img_trans img {
     position:absolute;
     left:0;
-    -webkit-transition: opacity 1s 1s ease-in-out;
-    -moz-transition: opacity 1s 1s ease-in-out;
-    -o-transition: opacity 1s 1s ease-in-out;
-    transition: opacity 1s 1s ease-in-out;
+    -webkit-transition: opacity 500ms 500ms ease-in-out;
+    -moz-transition: opacity 500ms 500ms ease-in-out;
+    -o-transition: opacity 500ms 500ms ease-in-out;
+    transition: opacity 500ms 500ms ease-in-out;
     animation-duration: 6s;
   }
-  
   #img_trans img.top:hover {
     opacity:0;
   }
@@ -194,6 +193,7 @@ img{
     margin: auto;
     transition: box-shadow .3s;
 }
+
 .card:hover {
     box-shadow: 0 0 20px rgba(185, 185, 185, 0.452); 
   }
@@ -305,7 +305,7 @@ img{
   }
   
   .modal__inner {
-    transition: top .25s ease;
+    transition: top .5s ease;
     position: absolute;
     top: -20%;
     right: 0;
