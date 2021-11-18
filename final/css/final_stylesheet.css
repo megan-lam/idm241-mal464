@@ -111,6 +111,18 @@ h2.title{
     color: #fc7171;
     margin-top: 1rem;
 }
+.off4{
+    list-style: none;
+    font-weight: bold;
+    color: #98bb6a;
+    margin-top: 1rem;
+}
+.off5{
+    list-style: none;
+    font-weight: bold;
+    color: #11a1b4;
+    margin-top: 1rem;
+}
 li{
     font-family: 'montserrat';    
     font-size: 1rem;
@@ -135,10 +147,13 @@ li{
 }
 img{
     display: inline-block;
-    max-width: 425px;
     padding: 3rem;
     text-align: center;
 }
+img.tallpic{
+    width: 280px;
+}
+
 /*h2,li{
     text-align: center;
 }
@@ -156,16 +171,20 @@ img{
     max-width: 425px;
     padding: 3rem;
     text-align: center;
-}*/
+}
 img{
     max-width: 280px;
-}
+}*/
 
-@media (max-width: 500px){
-    img{
-       max-width: 300px;
+@media (max-width: 599px){
+    img.widepic{
+        max-width: 325px;
     }}
 
+@media (min-width: 600px){
+    img.widepic{
+        width: 550px;
+}}
 .ordinary:hover {
     text-decoration: underline;
    }
