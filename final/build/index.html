@@ -13,7 +13,7 @@
     <a href="https://deciem.com/en-us/theordinary/theordinary-skincare" class="ordinary" target="_blank">Ordinary.</a>
     </div>
         <div class="bar"> 
-        <h3 class="alphatext">IDM 241 - Beta Build</h3>
+        <h3 class="alphatext">IDM 241 - Final Build</h3>
         </div>
     <!--<h1 class="heading"> IDM 241: Alpha</h1>
         <a href="https://deciem.com/en-us/theordinary/theordinary-skincare" class="link" target="_blank">The Ordinary - Microinteraction</a>-->
@@ -133,13 +133,119 @@
         clicks on the "View Cart" or "Checkout" button, their respective modals 
         slide in and can be closed by clicking the "X" button</li>
         </ul>
+    <h2 class="title"> Note:</h2>
+        <ul>
+        <li>Some buttons within the modal are not active. This includes the Checkout button on the 'View Cart' modal,
+            Sign in, and Checkout as Guest on the 'Checkout' modal.
+        </li>
+        </ul>
 </div>
 </div>
+
+
+<input class="modal-state" id="modal-1" type="checkbox" />
+<div class="modal">
+  <label class="modal__bg" for="modal-1"></label>
+  <div class="modal__inner">
+    <label class="modal__close" for="modal-1"></label>
+<div class="position_modal">
+    <img class="modal_img" src="images/check_icon.svg"/>
+    <h2 class="modal_text">ADDED TO CART</h2>
+
+
+    <div class="position_btn2">
+    <label class="btn2" for="modal-2">VIEW CART</label></div>
+    
+    <input class="modal-state" id="modal-2" type="checkbox" />
+    <div class="modal">
+    <label class="modal__bg" for="modal-2"></label>
+    <div class="modal__inner2">
+    <label class="modal__close" for="modal-2"></label>
+    <div class="position_modal2">
+
+    <h2 class="modal_text2">YOUR CART</h2>
+    <HR WIDTH="100%" COLOR="E0DED9" SIZE="10">
+    <img class="cart_img" src="images/bottle.png"/>
+
+    <div class="modal__inside_text">
+    <h3 class="brandname_inside">THE ORDINARY</h3>
+    <br>
+            <h1 class="productname_inside">“Buffet + Copper Peptides 1%"</h1>
+    <div class="qty-input">
+    <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+    </div>
+
+    <div class="more_text">
+        <h2 class="price_inside">28.90 USD</h2>
+        <h2 class="size_inside">30 ml</h2>
+    </div>
+
+    <div class="bottom_position">
+
+    <h2 class="totals">Subtotal: 28.90USD</h2>
+    <h3 class="free_ship">You qualify for free shipping!</h3>
+    <h2 class="left_text">Enjoy 23% off for Slowvember</h2>
+    <br>
+    <h2 class="left_text2">Applied at checkout!</h2>
+    <label class="btn_inside">CHECKOUT</label>
+    </div>
+    </div>
+
+
+    </div>
+    </div>  
+    </div>
+
+    <div class="position_btn2">
+    <label class="btn2" for="modal-3">CHECKOUT</label></div>
+    
+    <input class="modal-state" id="modal-3" type="checkbox" />
+    <div class="modal">
+    <label class="modal__bg" for="modal-3"></label>
+    <div class="modal__inner2">
+    <label class="modal__close" for="modal-3"></label>
+
+    <div class="position_modal2">
+
+        <h2 class="modal_text2">CHECKOUT</h2>
+        <HR WIDTH="100%" COLOR="E0DED9" SIZE="10">
+            
+<div class="middle">    
+        <h1 class="header_inside">SIGN IN</h1>
+        <br>
+        <input class="input_text" type="email" id="site-search" placeholder="Email">
+<br>
+<div class="position_input">
+        <input class="input_text" type="password" id="site-search" placeholder="Password">
+    </div>
+    <label class="btn2_inside">SIGN IN</label>
+
+    <div class="bottom_content">
+    <h1 class="header_inside">GUEST CHECKOUT</h1>
+        <br>
+        <label class="btn2_inside">CHECKOUT AS GUEST</label>
+        
+    </div>
+    </div>
+    </div>  
+    </div>
+    </div>
+    
+
+
+    
+    
+    
 
     
 
 
-<input class="modal-state" id="modal-1" type="checkbox" />
+ 
+</div>
+  </div>
+
+
+<!--<input class="modal-state" id="modal-1" type="checkbox" />
 <div class="modal">
   <label class="modal__bg" for="modal-1"></label>
   <div class="modal__inner">
@@ -152,7 +258,7 @@
     <label class="btn2" for="modal-2">VIEW CART</label></div>
 <input class="modal-state" id="modal-2" type="checkbox" />
 <div class="modal">
-  <label class="modal__bg" for="modal-2"></label>
+            <label class="modal__bg" for="modal-2"></label>
   <div class="modal__inner2">
     <label class="modal__close" for="modal-2"></label>
     <h2>Sleppy sloth</h2>
@@ -166,7 +272,23 @@
   </div>
 </div>
 
+<div class="wrapper">
+    <a href="#demo-modal">Open Demo Modal</a>
+</div>
 
+<div id="demo-modal" class="modal">
+    <div class="modal__content">
+        <h1>CSS Only Modal</h1>
+
+        <p>
+            You can use the :target pseudo-class to create a modals with Zero JavaScript. Enjoy!
+        </p>
+
+        
+
+        <a href="#" class="modal__close">&times;</a>
+    </div>
+</div>-->
 
 </body>
 </html>

@@ -112,6 +112,18 @@ h2.title{
     color: #fc7171;
     margin-top: 1rem;
 }
+.off4{
+    list-style: none;
+    font-weight: bold;
+    color: #98bb6a;
+    margin-top: 1rem;
+}
+.off5{
+    list-style: none;
+    font-weight: bold;
+    color: #11a1b4;
+    margin-top: 1rem;
+}
 li{
     font-family: 'montserrat';    
     font-size: 1rem;
@@ -231,7 +243,7 @@ img{
 .details{
     height: 40px;
 }
-.price, .size{
+.price, .size, .price_inside, .size_inside{
     font-family: 'montserrat';
     font-size: .9rem;
     display: inline-block;
@@ -279,7 +291,7 @@ img{
     left: 0;
     text-align: left;
     background: rgba(0, 0, 0, 0.3);
-    transition: opacity .25s ease;
+    transition: all .4s;;
   }
   
   .modal__bg {
@@ -322,17 +334,17 @@ img{
   .modal__inner2 {
     transition: top .5s ease;
     position: absolute;
-    top: -20%;
+    top: -10%;
     right: 0;
     bottom: 0;
     left: 0;
-    width: 500px;
+    width: 700px;
     margin: auto;
     overflow: auto;
     background: #fff;
     border-radius: 5px;
     padding: 1em 2em;
-    height: 394px;
+    height: 500px;
   }
   
   .modal__close {
@@ -372,8 +384,12 @@ img{
       
     .modal__inner {
       width: 50%;
-      height: 60%;
       box-sizing: border-box;
+    }
+
+    .modal__inner2{
+        width: 85%;
+        box-sizing: border-box;
     }
   }
   
@@ -426,10 +442,25 @@ img{
     font-size: 1.2rem;
     color: #9E9E9E;
   }
+  .modal_text2{
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: black;
+  }
   .position_modal{
       text-align: center;
       padding-top: 30%;
   }
+  .position_modal2{
+    text-align: left;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+.cart_img{
+    width: 200px;
+    float: left;
+}
   .position_btn2{
       display: block;
       padding-top: 2.5rem;
@@ -437,4 +468,205 @@ img{
   .position_btn3{
     display: block;
     padding-top: 2rem;
+}
+.brandname_inside{
+    color: #9e9e9e;
+    display: inline-block;
+    font-family: 'montserrat';
+    font-size: .8rem;
+    font-weight: lighter;
+    margin-bottom: 0;
+    text-decoration: none;
+    
+}
+.productname_inside{
+    display: inline-block;
+    font-family: 'montserrat';
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+.modal__inside_text{
+padding-top: 2rem;
+}
+.more_text{
+    padding-top: 1rem;
+}
+.price_inside{
+    font-weight: normal;
+    position: relative;
+    float: right;
+}
+.size_inside{
+    font-weight: bold;
+}
+/*.wrapper {
+    height: 100vh;
+    This part is important for centering the content 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrapper a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #585858;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+  }
+  
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal__content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    padding: 1em 2em;
+  }
+  */
+
+/*quantity button*/
+.qty-input{
+    float: right;
+    display: inline;
+}
+.product-qty{
+    background: transparent;
+    color: inherit;
+    font-size: .9rem;
+    font-weight: bold;
+    min-width: 0;
+    height: 2rem;
+    border-radius: 5px;
+    line-height: 1;
+    width: 30px;
+    padding-left: 1rem;
+    border: 0.3px solid #000000;
+}
+.btn_inside{
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-size: .8rem;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 6px 20px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    float: right;
+}
+.btn_inside{
+    background-color: black;
+    color: white;
+}
+.btn2_inside:hover{
+        background-color: black;
+        color: white;
+}
+.totals{
+    font-family: 'montserrat';
+    font-size: 1rem;
+    margin: 0;
+    text-align: right;
+
+}
+.left_text{
+    font-family: 'montserrat';
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-bottom: 0;
+    display: inline-block;
+}
+.free_ship{
+    font-family: 'montserrat';
+    font-weight: lighter;
+    color:#9E9E9E;
+    font-size: .9rem;
+    margin-top: .4rem;
+    margin-bottom: 0;
+    text-align: right;
+
+}
+.left_text2{
+    font-family: 'montserrat';
+    font-weight: lighter;
+    color:#9E9E9E;
+    font-size: .9rem;
+    margin-bottom: 0;
+    display: inline;
+}
+.bottom_position{
+    padding-top: 7rem;
+
+}
+
+/*modal 3*/
+.header_inside{
+    display: block;
+    font-family: 'montserrat';
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.input_text{
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: 'montserrat';
+    color:rgb(173, 173, 173);
+    padding-top: 0rem;
+    padding-left: 1rem;
+}
+#site-search{
+    border: 0.1px solid rgb(173, 173, 173);
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 18rem;
+    height: 2rem;
+}
+.position_input{
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+.btn2_inside{
+font-family: 'montserrat';
+font-weight: bold;
+font-size: .8rem;
+background-color: white;
+color: black;
+border: 1px solid black;
+padding: 6px 20px;
+border-radius: 5px;
+transition-duration: 0.5s;
+cursor: pointer;
+}
+.bottom_content{
+    padding-top: 2rem;
+}
+.middle{
+padding-top: 1.5rem;
+text-align: center;
 }
